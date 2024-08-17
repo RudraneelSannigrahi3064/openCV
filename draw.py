@@ -1,0 +1,11 @@
+import cv2
+img=cv2.imread("C:\\Users\\KIIT\\Desktop\\Weather app meta\\image_fx_rainy_weather_creative_image (1).jpg")
+img=cv2.resize(img,(600,400))
+cv2.line(img,(0,0),(200,200),(0,0,0),5)
+cv2.arrowedLine(img,(600,400),(200,200),(0,0,0),5)
+cv2.rectangle(img,(0,400),(200,0),(0,0,0),5)
+cv2.circle(img,(200,200),30,(0,0,0),-1)
+cv2.putText(img,"GOD",(400,400),cv2.FONT_HERSHEY_PLAIN,5,(0,0,0),2,cv2.LINE_AA)
+cv2.imshow("img",img)
+cv2.waitKey()
+cv2.destroyAllWindows()
